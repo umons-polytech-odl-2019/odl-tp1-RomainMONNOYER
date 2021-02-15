@@ -34,6 +34,6 @@ public class Exercise2Test {
 		float meanAge = (float) IntStream.of(ages).average().orElse(0.0);
 
 		IntStream.of(ages).forEach(Exercise2::createPerson);
-		assertThat(Exercise2.computeAveragePopulationAge()).isCloseTo(meanAge, withinPercentage(1));
+		assertThat(Exercise2.computeAveragePopulationAge()).isCloseTo(meanAge, withinPercentage(2));
 	}
 }

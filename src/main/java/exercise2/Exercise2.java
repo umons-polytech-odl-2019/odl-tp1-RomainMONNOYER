@@ -7,8 +7,9 @@ public class Exercise2 {
 	// Créez-y une méthode statique "computeAveragePopulationAge" pour calculer l'âge moyen de la population.
 	// Implémentez-y une méthode statique "resetPopulation" pour remettre les compteurs à zéro.
 
-	static void createPerson(int age) {
+	static Person createPerson(int age) {
 		Person p=new Person(age);
+		return p;
 	}
 
 	static int computePopulationSize() {
